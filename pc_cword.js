@@ -7,8 +7,8 @@
 
    Crossword Puzzle Script
    
-   Author: 
-   Date:   
+   Author: Khalel Abaquin
+   Date:   3.27.19
    
    Global Variables
    ================
@@ -49,18 +49,17 @@
 
 */
 
+window.onload = init;
 
-
-
-
-   
-
-
-
-
+var allLetters;
+var currentLetter;
+var wordLetters;
+var acrossClue;
+var downClue;
+var typeDirection = "right";
 
 /*====================================================*/
 
 function getChar(keyNum) {
-   return String.fromCharCode(keyNum);
+      return String.fromCharCode(keyNum);
 }
