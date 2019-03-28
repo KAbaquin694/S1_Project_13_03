@@ -49,14 +49,23 @@
 
 */
 
-window.onload = init;
-
+//This section of code declares 6 global variables, one of which has a value of 'right'.
 var allLetters;
 var currentLetter;
 var wordLetters;
 var acrossClue;
 var downClue;
 var typeDirection = "right";
+
+//This line of code loads the function 'init' with the browser.
+window.onload = init;
+
+//This block of code creates a funciton that sets up the inital conditions of the puzzle.
+function init() {
+      allLetters = document.querySelectorAll("table#crossword span");
+      currentLetter = allLetters[0];
+      var acrossID = currentLetter.getAttribute("data-clue-a");
+}
 
 /*====================================================*/
 
